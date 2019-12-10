@@ -1,8 +1,8 @@
 
 rm(list = ls())
 
-library(devtools)
-# install.packages('incidence')
+# library(devtools)
+# devtools::install.packages('incidence')
 # devtools::install_github('annecori/EpiEstim')
 library(EpiEstim)
 library(tidyverse)
