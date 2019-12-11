@@ -8,12 +8,13 @@ library(EpiEstim)
 library(tidyverse)
 library(incidence)
 library(readxl)
-library(EpiWeek)
+library(aweek)
 library(gridExtra)
 
 
 
 source('R_Estimates_functions.R')
+set_week_start("Sunday")
 
 file <- "epicurve.xlsx"
 
