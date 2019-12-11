@@ -24,8 +24,7 @@ R_EstimateIL <- function (dat,
   if (window_units == 'days')   {unitm = 1}
 
 dat$row  <- 1:length(dat$total_cases)
-dat$date_calc <-as.Date(as.character(
-  epiweekToDate((dat$year),dat$week)$d1)) 
+dat$date_calc <- aweek::get_date(week = dat$week, year = dat$year, day = 7, start = "Sunday") 
 
 
 data <- dat$total_cases
